@@ -1,4 +1,5 @@
 declare class BaseError extends Error {
-    constructor(message: string);
+    innerError: Error;
+    constructor(message: string, innerError?: any);
 }
 export default BaseError;
