@@ -1,8 +1,6 @@
-'use strict';
-
 class BaseError extends Error {
 
-    constructor(message) {
+    constructor(message: string) {
         super(message);
 
         this.name = this.constructor.name;
@@ -10,4 +8,4 @@ class BaseError extends Error {
 
 }
 
-module.exports = BaseError;
+export default BaseError;

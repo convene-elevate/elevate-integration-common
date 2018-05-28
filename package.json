@@ -1,10 +1,17 @@
 {
   "name": "elevate-integration-common",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "engines": {
     "node": "8.11.1",
     "npm": "5.6.0"
   },
+  "scripts": {
+    "build": "tsc --project tsconfig.json"
+  },
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "typescript": "^2.8.3"
+  }
 }
