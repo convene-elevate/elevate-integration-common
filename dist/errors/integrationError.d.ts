@@ -1,6 +1,6 @@
 import BaseError from './baseError';
 declare class IntegrationError extends BaseError {
-    aciton: any;
+    event: any;
     constructor(message: string, event: any, innerError: any);
 }
 export default IntegrationError;

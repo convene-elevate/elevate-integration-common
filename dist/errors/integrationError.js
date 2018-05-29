@@ -4,7 +4,7 @@ const baseError_1 = require("./baseError");
 class IntegrationError extends baseError_1.default {
     constructor(message, event, innerError) {
         super(message, innerError);
-        this.aciton = event;
+        this.event = event;
     }
 }
 exports.default = IntegrationError;
